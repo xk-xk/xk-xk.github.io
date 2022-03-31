@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue用户行为埋点 | 前端技术文档</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="继电器资缘网前端技术文档">
+    
+    <link rel="preload" href="/assets/css/0.styles.22fef927.css" as="style"><link rel="preload" href="/assets/js/app.f4e7372f.js" as="script"><link rel="preload" href="/assets/js/2.5644ef08.js" as="script"><link rel="preload" href="/assets/js/40.55909e9a.js" as="script"><link rel="prefetch" href="/assets/js/10.f1b62ca6.js"><link rel="prefetch" href="/assets/js/11.e6a76e73.js"><link rel="prefetch" href="/assets/js/12.71e7aba0.js"><link rel="prefetch" href="/assets/js/13.ee0746a7.js"><link rel="prefetch" href="/assets/js/14.bf46544d.js"><link rel="prefetch" href="/assets/js/15.f07bf7f1.js"><link rel="prefetch" href="/assets/js/16.c6fb407e.js"><link rel="prefetch" href="/assets/js/17.fc23fb3f.js"><link rel="prefetch" href="/assets/js/18.b6c90823.js"><link rel="prefetch" href="/assets/js/19.e8d039e9.js"><link rel="prefetch" href="/assets/js/20.330c231e.js"><link rel="prefetch" href="/assets/js/21.64063066.js"><link rel="prefetch" href="/assets/js/22.3f5d725d.js"><link rel="prefetch" href="/assets/js/23.764328f3.js"><link rel="prefetch" href="/assets/js/24.8a169a61.js"><link rel="prefetch" href="/assets/js/25.95b301b7.js"><link rel="prefetch" href="/assets/js/26.96e512f4.js"><link rel="prefetch" href="/assets/js/27.ba069998.js"><link rel="prefetch" href="/assets/js/28.a2af6576.js"><link rel="prefetch" href="/assets/js/29.f7e9ed6a.js"><link rel="prefetch" href="/assets/js/3.ffc637de.js"><link rel="prefetch" href="/assets/js/30.b4cd2f1c.js"><link rel="prefetch" href="/assets/js/31.78c0ed59.js"><link rel="prefetch" href="/assets/js/32.6314ea78.js"><link rel="prefetch" href="/assets/js/33.98431209.js"><link rel="prefetch" href="/assets/js/34.61b88a7a.js"><link rel="prefetch" href="/assets/js/35.0a226411.js"><link rel="prefetch" href="/assets/js/36.f3d90c1d.js"><link rel="prefetch" href="/assets/js/37.a6071a19.js"><link rel="prefetch" href="/assets/js/38.74df58ec.js"><link rel="prefetch" href="/assets/js/39.7c643a86.js"><link rel="prefetch" href="/assets/js/4.02e7ba69.js"><link rel="prefetch" href="/assets/js/41.eeb2ff7e.js"><link rel="prefetch" href="/assets/js/42.2ee98961.js"><link rel="prefetch" href="/assets/js/43.b0788c76.js"><link rel="prefetch" href="/assets/js/44.1149b63f.js"><link rel="prefetch" href="/assets/js/45.8c2fd675.js"><link rel="prefetch" href="/assets/js/46.68faf3a1.js"><link rel="prefetch" href="/assets/js/47.9130fb87.js"><link rel="prefetch" href="/assets/js/48.a10e69f3.js"><link rel="prefetch" href="/assets/js/49.4b7410be.js"><link rel="prefetch" href="/assets/js/5.9e8b646f.js"><link rel="prefetch" href="/assets/js/6.f2275d23.js"><link rel="prefetch" href="/assets/js/7.a979b898.js"><link rel="prefetch" href="/assets/js/8.c7bef64f.js"><link rel="prefetch" href="/assets/js/9.ef9a67d9.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.22fef927.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">前端技术文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/summary/" class="nav-link">
+  概述
+</a></div><div class="nav-item"><a href="/program-specs/" class="nav-link">
+  代码规范
+</a></div><div class="nav-item"><a href="/vue-anchor/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  用户行为埋点
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术栈" class="dropdown-title"><span class="title">技术栈</span> <span class="arrow down"></span></button> <button type="button" aria-label="技术栈" class="mobile-dropdown-title"><span class="title">技术栈</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Vue
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/tec-stack/vuex/" class="nav-link">
+  vuex
+</a></li><li class="dropdown-subitem"><a href="/tec-stack/axios/" class="nav-link">
+  axios
+</a></li><li class="dropdown-subitem"><a href="/tec-stack/nuxt/" class="nav-link">
+  Nuxt.js
+</a></li><li class="dropdown-subitem"><a href="/tec-stack/uniapp/" class="nav-link">
+  uniapp
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Electron
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/electron/" class="nav-link">
+  vue cli plugin electron builder
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大前端" class="dropdown-title"><span class="title">PC前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="大前端" class="mobile-dropdown-title"><span class="title">PC前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          用户端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/web/zy_ssr.html" class="nav-link">
+  资缘网主站(SSR)
+</a></li><li class="dropdown-subitem"><a href="/web/zy_personel.html" class="nav-link">
+  资缘网个人中心
+</a></li><li class="dropdown-subitem"><a href="/web/zy_seller.html" class="nav-link">
+  资缘网商家端
+</a></li><li class="dropdown-subitem"><a href="/web/zy_admin.html" class="nav-link">
+  资缘网平台端
+</a></li><li class="dropdown-subitem"><a href="/web/zy_show.html" class="nav-link">
+  资缘网PC云展
+</a></li><li class="dropdown-subitem"><a href="/web/zy_chat.html" class="nav-link">
+  资缘网客服系统
+</a></li></ul></li><li class="dropdown-item"><h4>
+          内部平台
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zh/miscellaneous/migration-guide.html" class="nav-link">
+  平台中心
+</a></li><li class="dropdown-subitem"><a href="/zh/miscellaneous/migration-guide.html" class="nav-link">
+  绩效管理系统(web)
+</a></li><li class="dropdown-subitem"><a href="/zh/miscellaneous/migration-guide.html" class="nav-link">
+  绩效管理系统(admin)
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="微信端" class="dropdown-title"><span class="title">微信端</span> <span class="arrow down"></span></button> <button type="button" aria-label="微信端" class="mobile-dropdown-title"><span class="title">微信端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          用户端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/wechat/zy_wechat.html" class="nav-link">
+  资缘网微信端
+</a></li><li class="dropdown-subitem"><a href="/wechat/zy_show.html" class="nav-link">
+  资缘网微信云展
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Ego" class="dropdown-title"><span class="title">Ego</span> <span class="arrow down"></span></button> <button type="button" aria-label="Ego" class="mobile-dropdown-title"><span class="title">Ego</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          用户端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/ego/ego_uniapp.html" class="nav-link">
+  买家小程序
+</a></li><li class="dropdown-subitem"><a href="/ego/ego_pc.html" class="nav-link">
+  买家PC端
+</a></li></ul></li><li class="dropdown-item"><h4>
+          商家端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/ego/ego_admin_pc.html" class="nav-link">
+  商家PC端
+</a></li><li class="dropdown-subitem"><a href="/ego/ego_admin_H5.html" class="nav-link">
+  商家端H5
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="http://192.168.25.106/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  npm私仓
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="http://192.168.25.117/front" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  git私仓
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/summary/" class="nav-link">
+  概述
+</a></div><div class="nav-item"><a href="/program-specs/" class="nav-link">
+  代码规范
+</a></div><div class="nav-item"><a href="/vue-anchor/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  用户行为埋点
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术栈" class="dropdown-title"><span class="title">技术栈</span> <span class="arrow down"></span></button> <button type="button" aria-label="技术栈" class="mobile-dropdown-title"><span class="title">技术栈</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Vue
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/tec-stack/vuex/" class="nav-link">
+  vuex
+</a></li><li class="dropdown-subitem"><a href="/tec-stack/axios/" class="nav-link">
+  axios
+</a></li><li class="dropdown-subitem"><a href="/tec-stack/nuxt/" class="nav-link">
+  Nuxt.js
+</a></li><li class="dropdown-subitem"><a href="/tec-stack/uniapp/" class="nav-link">
+  uniapp
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Electron
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/electron/" class="nav-link">
+  vue cli plugin electron builder
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大前端" class="dropdown-title"><span class="title">PC前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="大前端" class="mobile-dropdown-title"><span class="title">PC前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          用户端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/web/zy_ssr.html" class="nav-link">
+  资缘网主站(SSR)
+</a></li><li class="dropdown-subitem"><a href="/web/zy_personel.html" class="nav-link">
+  资缘网个人中心
+</a></li><li class="dropdown-subitem"><a href="/web/zy_seller.html" class="nav-link">
+  资缘网商家端
+</a></li><li class="dropdown-subitem"><a href="/web/zy_admin.html" class="nav-link">
+  资缘网平台端
+</a></li><li class="dropdown-subitem"><a href="/web/zy_show.html" class="nav-link">
+  资缘网PC云展
+</a></li><li class="dropdown-subitem"><a href="/web/zy_chat.html" class="nav-link">
+  资缘网客服系统
+</a></li></ul></li><li class="dropdown-item"><h4>
+          内部平台
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zh/miscellaneous/migration-guide.html" class="nav-link">
+  平台中心
+</a></li><li class="dropdown-subitem"><a href="/zh/miscellaneous/migration-guide.html" class="nav-link">
+  绩效管理系统(web)
+</a></li><li class="dropdown-subitem"><a href="/zh/miscellaneous/migration-guide.html" class="nav-link">
+  绩效管理系统(admin)
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="微信端" class="dropdown-title"><span class="title">微信端</span> <span class="arrow down"></span></button> <button type="button" aria-label="微信端" class="mobile-dropdown-title"><span class="title">微信端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          用户端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/wechat/zy_wechat.html" class="nav-link">
+  资缘网微信端
+</a></li><li class="dropdown-subitem"><a href="/wechat/zy_show.html" class="nav-link">
+  资缘网微信云展
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Ego" class="dropdown-title"><span class="title">Ego</span> <span class="arrow down"></span></button> <button type="button" aria-label="Ego" class="mobile-dropdown-title"><span class="title">Ego</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          用户端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/ego/ego_uniapp.html" class="nav-link">
+  买家小程序
+</a></li><li class="dropdown-subitem"><a href="/ego/ego_pc.html" class="nav-link">
+  买家PC端
+</a></li></ul></li><li class="dropdown-item"><h4>
+          商家端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/ego/ego_admin_pc.html" class="nav-link">
+  商家PC端
+</a></li><li class="dropdown-subitem"><a href="/ego/ego_admin_H5.html" class="nav-link">
+  商家端H5
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="http://192.168.25.106/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  npm私仓
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="http://192.168.25.117/front" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  git私仓
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/vue-anchor/" aria-current="page" class="active sidebar-link">Vue用户行为埋点</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vue-anchor/#项目registry配置" class="sidebar-link">项目registry配置</a></li><li class="sidebar-sub-header"><a href="/vue-anchor/#配置dependencies" class="sidebar-link">配置dependencies</a></li><li class="sidebar-sub-header"><a href="/vue-anchor/#埋点定义" class="sidebar-link">埋点定义</a></li><li class="sidebar-sub-header"><a href="/vue-anchor/#事件行为埋点" class="sidebar-link">事件行为埋点</a></li><li class="sidebar-sub-header"><a href="/vue-anchor/#页面行为埋点" class="sidebar-link">页面行为埋点</a></li><li class="sidebar-sub-header"><a href="/vue-anchor/#区域展现埋点" class="sidebar-link">区域展现埋点</a></li><li class="sidebar-sub-header"><a href="/vue-anchor/#指令修饰符" class="sidebar-link">指令修饰符</a></li><li class="sidebar-sub-header"><a href="/vue-anchor/#命名规则" class="sidebar-link">命名规则</a></li></ul></li><li><a href="/vue-anchor/show-anchor.html" class="sidebar-link">云展项目埋点</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue用户行为埋点"><a href="#vue用户行为埋点" class="header-anchor">#</a> Vue用户行为埋点</h1> <p>此用户行为埋点插件由我们内部人员进行维护，插件目前上传在<code>npm私仓</code></p> <h2 id="项目registry配置"><a href="#项目registry配置" class="header-anchor">#</a> 项目registry配置</h2> <p>在根目录根据自己的包管理软件（npm or yarn）创建对应的.npmrc/.yarnrc为项目单独指定registry</p> <div class="language-vue extra-class"><pre class="language-vue"><code>// .yarnrc
+registry &quot;http://192.168.25.106/&quot;
+// .npmrc
+registry=http://192.168.25.106
+</code></pre></div><h2 id="配置dependencies"><a href="#配置dependencies" class="header-anchor">#</a> 配置dependencies</h2> <p>package.json添加<code>&quot;zy-track&quot;: &quot;^1.0.0&quot;</code></p> <div class="language-bin extra-class"><pre class="language-text"><code>yarn install
+</code></pre></div><h2 id="埋点定义"><a href="#埋点定义" class="header-anchor">#</a> 埋点定义</h2> <p>用户行为埋点是为了对用户行为进行统计和分析，所以每一个埋点都需要进行定义，创建<code>track_events.js</code>将当前项目需要的埋点进行定义。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token comment">/** 预置全局的UVPV统计 
+   * @name UVPV 固定名称不支持修改
+   * @desc UV、PV埋点
+   * @param {Object} context 当前上下文
+   */</span>
+  <span class="token constant">UVPV</span><span class="token punctuation">(</span><span class="token parameter">_</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// do somthing...</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">/** 预置全局页面停留时间统计
+   * @name TONP 固定名称不支持修改
+   * @desc 页面停留时间埋点（Time on Page）
+   * @param {Object} context 当前上下文
+   * @param {Timestamp} et 进入页面时间
+   * @param {Timestamp} dt 离开页面时间
+   */</span>
+  <span class="token constant">TONP</span><span class="token punctuation">(</span><span class="token parameter">_<span class="token punctuation">,</span> <span class="token punctuation">{</span> et<span class="token punctuation">,</span> dt <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// do somthing...</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">/** 用数据定义新埋点，需要多少埋点就定义多少个。埋点数据将在插件引入时作为插件参数进行初始化
+   * @param {Object} context 当前上下文
+   * @param {Object} item 事件参数
+   * @param {Object} event 事件对象
+   */</span>
+  <span class="token number">18015</span><span class="token punctuation">(</span><span class="token punctuation">{</span>$route<span class="token operator">:</span> <span class="token punctuation">{</span> name <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span> id <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span> target <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 触发的埋点动作</span>
+    <span class="token function">trackAction</span><span class="token punctuation">(</span><span class="token string">&quot;18015&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      id<span class="token punctuation">,</span>
+      source_page<span class="token operator">:</span> name<span class="token punctuation">,</span>
+      target
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token number">18016</span><span class="token punctuation">(</span><span class="token punctuation">{</span>$route<span class="token operator">:</span> <span class="token punctuation">{</span> name <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span> id <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span> target <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 触发的埋点动作</span>
+    <span class="token function">trackAction</span><span class="token punctuation">(</span><span class="token string">&quot;18016&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      id<span class="token punctuation">,</span>
+      source_page<span class="token operator">:</span> name<span class="token punctuation">,</span>
+      target
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>main.js引入（SSR项目通过插件方式引入）</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">&quot;vue&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> zyTrack <span class="token keyword">from</span> <span class="token string">&quot;zy-track&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> trackEvents <span class="token keyword">from</span> <span class="token string">&quot;./track-events&quot;</span><span class="token punctuation">;</span>
+
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>zyTrack<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  trackEvents<span class="token punctuation">,</span> <span class="token comment">// 埋点事件对象</span>
+  trackEnable<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token constant">UVPV</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 是否开启UVPV统计，默认为false</span>
+    <span class="token constant">TONP</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">// 是否开启页面停留时长统计，默认为false</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="事件行为埋点"><a href="#事件行为埋点" class="header-anchor">#</a> 事件行为埋点</h2> <div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!-- 事件行为埋点（DOM） --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name"><span class="token namespace">v-track:</span>18015.click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>handleClick<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name"><span class="token namespace">v-track:</span>18015.click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{ handleClick, item, index }<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name"><span class="token namespace">v-track:</span>18015.click.async</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{ handleSearch, rest }<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name"><span class="token namespace">v-track:</span>18015.click.delay</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>handleClick<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- 事件行为埋点（组件） --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cmp</span> <span class="token attr-name"><span class="token namespace">v-track:</span>18015.click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>handleClick<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>cmp</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cmp</span> <span class="token attr-name"><span class="token namespace">v-track:</span>18015.[自定义事件名]</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>handleSearch<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>cmp</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cmp</span> <span class="token attr-name"><span class="token namespace">v-track:</span>18015.[自定义事件名].delay</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>handleSearch<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>cmp</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cmp</span> <span class="token attr-name"><span class="token namespace">v-track:</span>18015.[自定义事件名].async</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{ handleSearch, rest }<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>cmp</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="页面行为埋点"><a href="#页面行为埋点" class="header-anchor">#</a> 页面行为埋点</h2> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>track-view</span> <span class="token attr-name"><span class="token namespace">v-track:</span>18015</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>track-view</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>track-view</span> <span class="token attr-name"><span class="token namespace">v-track:</span>18015.watch</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{ result }<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>track-view</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>track-view</span> <span class="token attr-name"><span class="token namespace">v-track:</span>18015.watch.delay</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{ result }<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>track-view</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>track-view</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>result<span class="token punctuation">&quot;</span></span> <span class="token attr-name"><span class="token namespace">v-track:</span>18015</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>track-view</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="区域展现埋点"><a href="#区域展现埋点" class="header-anchor">#</a> 区域展现埋点</h2> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>block</span> <span class="token attr-name"><span class="token namespace">v-track:</span>18015.show</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>block</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>block</span> <span class="token attr-name"><span class="token namespace">v-track:</span>18015.show.once</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>block</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>block</span> <span class="token attr-name"><span class="token namespace">v-track:</span>18015.show.custom</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{ ref: <span class="token punctuation">'</span>scroll<span class="token punctuation">'</span> }<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>block</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>block</span> <span class="token attr-name"><span class="token namespace">v-track:</span>18015.show.custom.once</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{ ref: <span class="token punctuation">'</span>scroll<span class="token punctuation">'</span> }<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>block</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="指令修饰符"><a href="#指令修饰符" class="header-anchor">#</a> 指令修饰符</h2> <ul><li><code>.click</code> 表示事件行为的埋点</li> <li><code>.[custom-event]</code> 表示自定义事件行为的埋点</li> <li><code>.native</code> 表示监听组件原生click事件行为的埋点</li> <li><code>.watch</code> 表示页面异步行为的埋点</li> <li><code>.async</code> 配合<code>.click</code>指令，表示异步事件行为的埋点</li> <li><code>.delay</code> 表示埋点是否延迟执行，默认先执行埋点再执行回调</li> <li><code>.show</code> 表示区域曝光埋点</li> <li><code>.once</code> 配合<code>.show</code>指令，只执行一次埋点</li> <li><code>.custom</code> 配合<code>.show</code>指令，表示使用自定义scroll事件</li></ul> <h2 id="命名规则"><a href="#命名规则" class="header-anchor">#</a> 命名规则</h2> <p>所有项目埋点严格遵循<code>AABBXXYYY</code>命名规则</p> <ul><li><code>AA</code> 项目代码，以10起步，如云展项目为<code>12</code></li> <li><code>BB</code> 项目如需以模块划分埋点， 如云展-宏发专场定义为<code>01</code>，无划分则定义为<code>00</code></li> <li><code>XX</code> 表示埋点类型，<code>01事件行为埋点</code> <code>02页面行为埋点</code> <code>03展示暴露埋点</code></li> <li><code>YYY</code> 埋点编号，如<code>001</code>
+举例： 云展宏发专场搜索按钮点击事件行为埋点： 120101001</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/vue-anchor/show-anchor.html">
+        云展项目埋点
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.f4e7372f.js" defer></script><script src="/assets/js/2.5644ef08.js" defer></script><script src="/assets/js/40.55909e9a.js" defer></script>
+  </body>
+</html>

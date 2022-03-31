@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>资缘网主站(SSR) | 前端技术文档</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="继电器资缘网前端技术文档">
+    
+    <link rel="preload" href="/assets/css/0.styles.22fef927.css" as="style"><link rel="preload" href="/assets/js/app.f4e7372f.js" as="script"><link rel="preload" href="/assets/js/2.5644ef08.js" as="script"><link rel="preload" href="/assets/js/48.a10e69f3.js" as="script"><link rel="prefetch" href="/assets/js/10.f1b62ca6.js"><link rel="prefetch" href="/assets/js/11.e6a76e73.js"><link rel="prefetch" href="/assets/js/12.71e7aba0.js"><link rel="prefetch" href="/assets/js/13.ee0746a7.js"><link rel="prefetch" href="/assets/js/14.bf46544d.js"><link rel="prefetch" href="/assets/js/15.f07bf7f1.js"><link rel="prefetch" href="/assets/js/16.c6fb407e.js"><link rel="prefetch" href="/assets/js/17.fc23fb3f.js"><link rel="prefetch" href="/assets/js/18.b6c90823.js"><link rel="prefetch" href="/assets/js/19.e8d039e9.js"><link rel="prefetch" href="/assets/js/20.330c231e.js"><link rel="prefetch" href="/assets/js/21.64063066.js"><link rel="prefetch" href="/assets/js/22.3f5d725d.js"><link rel="prefetch" href="/assets/js/23.764328f3.js"><link rel="prefetch" href="/assets/js/24.8a169a61.js"><link rel="prefetch" href="/assets/js/25.95b301b7.js"><link rel="prefetch" href="/assets/js/26.96e512f4.js"><link rel="prefetch" href="/assets/js/27.ba069998.js"><link rel="prefetch" href="/assets/js/28.a2af6576.js"><link rel="prefetch" href="/assets/js/29.f7e9ed6a.js"><link rel="prefetch" href="/assets/js/3.ffc637de.js"><link rel="prefetch" href="/assets/js/30.b4cd2f1c.js"><link rel="prefetch" href="/assets/js/31.78c0ed59.js"><link rel="prefetch" href="/assets/js/32.6314ea78.js"><link rel="prefetch" href="/assets/js/33.98431209.js"><link rel="prefetch" href="/assets/js/34.61b88a7a.js"><link rel="prefetch" href="/assets/js/35.0a226411.js"><link rel="prefetch" href="/assets/js/36.f3d90c1d.js"><link rel="prefetch" href="/assets/js/37.a6071a19.js"><link rel="prefetch" href="/assets/js/38.74df58ec.js"><link rel="prefetch" href="/assets/js/39.7c643a86.js"><link rel="prefetch" href="/assets/js/4.02e7ba69.js"><link rel="prefetch" href="/assets/js/40.55909e9a.js"><link rel="prefetch" href="/assets/js/41.eeb2ff7e.js"><link rel="prefetch" href="/assets/js/42.2ee98961.js"><link rel="prefetch" href="/assets/js/43.b0788c76.js"><link rel="prefetch" href="/assets/js/44.1149b63f.js"><link rel="prefetch" href="/assets/js/45.8c2fd675.js"><link rel="prefetch" href="/assets/js/46.68faf3a1.js"><link rel="prefetch" href="/assets/js/47.9130fb87.js"><link rel="prefetch" href="/assets/js/49.4b7410be.js"><link rel="prefetch" href="/assets/js/5.9e8b646f.js"><link rel="prefetch" href="/assets/js/6.f2275d23.js"><link rel="prefetch" href="/assets/js/7.a979b898.js"><link rel="prefetch" href="/assets/js/8.c7bef64f.js"><link rel="prefetch" href="/assets/js/9.ef9a67d9.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.22fef927.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">前端技术文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/summary/" class="nav-link">
+  概述
+</a></div><div class="nav-item"><a href="/program-specs/" class="nav-link">
+  代码规范
+</a></div><div class="nav-item"><a href="/vue-anchor/" class="nav-link">
+  用户行为埋点
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术栈" class="dropdown-title"><span class="title">技术栈</span> <span class="arrow down"></span></button> <button type="button" aria-label="技术栈" class="mobile-dropdown-title"><span class="title">技术栈</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Vue
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/tec-stack/vuex/" class="nav-link">
+  vuex
+</a></li><li class="dropdown-subitem"><a href="/tec-stack/axios/" class="nav-link">
+  axios
+</a></li><li class="dropdown-subitem"><a href="/tec-stack/nuxt/" class="nav-link">
+  Nuxt.js
+</a></li><li class="dropdown-subitem"><a href="/tec-stack/uniapp/" class="nav-link">
+  uniapp
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Electron
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/electron/" class="nav-link">
+  vue cli plugin electron builder
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大前端" class="dropdown-title"><span class="title">PC前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="大前端" class="mobile-dropdown-title"><span class="title">PC前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          用户端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/web/zy_ssr.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  资缘网主站(SSR)
+</a></li><li class="dropdown-subitem"><a href="/web/zy_personel.html" class="nav-link">
+  资缘网个人中心
+</a></li><li class="dropdown-subitem"><a href="/web/zy_seller.html" class="nav-link">
+  资缘网商家端
+</a></li><li class="dropdown-subitem"><a href="/web/zy_admin.html" class="nav-link">
+  资缘网平台端
+</a></li><li class="dropdown-subitem"><a href="/web/zy_show.html" class="nav-link">
+  资缘网PC云展
+</a></li><li class="dropdown-subitem"><a href="/web/zy_chat.html" class="nav-link">
+  资缘网客服系统
+</a></li></ul></li><li class="dropdown-item"><h4>
+          内部平台
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zh/miscellaneous/migration-guide.html" class="nav-link">
+  平台中心
+</a></li><li class="dropdown-subitem"><a href="/zh/miscellaneous/migration-guide.html" class="nav-link">
+  绩效管理系统(web)
+</a></li><li class="dropdown-subitem"><a href="/zh/miscellaneous/migration-guide.html" class="nav-link">
+  绩效管理系统(admin)
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="微信端" class="dropdown-title"><span class="title">微信端</span> <span class="arrow down"></span></button> <button type="button" aria-label="微信端" class="mobile-dropdown-title"><span class="title">微信端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          用户端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/wechat/zy_wechat.html" class="nav-link">
+  资缘网微信端
+</a></li><li class="dropdown-subitem"><a href="/wechat/zy_show.html" class="nav-link">
+  资缘网微信云展
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Ego" class="dropdown-title"><span class="title">Ego</span> <span class="arrow down"></span></button> <button type="button" aria-label="Ego" class="mobile-dropdown-title"><span class="title">Ego</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          用户端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/ego/ego_uniapp.html" class="nav-link">
+  买家小程序
+</a></li><li class="dropdown-subitem"><a href="/ego/ego_pc.html" class="nav-link">
+  买家PC端
+</a></li></ul></li><li class="dropdown-item"><h4>
+          商家端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/ego/ego_admin_pc.html" class="nav-link">
+  商家PC端
+</a></li><li class="dropdown-subitem"><a href="/ego/ego_admin_H5.html" class="nav-link">
+  商家端H5
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="http://192.168.25.106/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  npm私仓
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="http://192.168.25.117/front" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  git私仓
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/summary/" class="nav-link">
+  概述
+</a></div><div class="nav-item"><a href="/program-specs/" class="nav-link">
+  代码规范
+</a></div><div class="nav-item"><a href="/vue-anchor/" class="nav-link">
+  用户行为埋点
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术栈" class="dropdown-title"><span class="title">技术栈</span> <span class="arrow down"></span></button> <button type="button" aria-label="技术栈" class="mobile-dropdown-title"><span class="title">技术栈</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Vue
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/tec-stack/vuex/" class="nav-link">
+  vuex
+</a></li><li class="dropdown-subitem"><a href="/tec-stack/axios/" class="nav-link">
+  axios
+</a></li><li class="dropdown-subitem"><a href="/tec-stack/nuxt/" class="nav-link">
+  Nuxt.js
+</a></li><li class="dropdown-subitem"><a href="/tec-stack/uniapp/" class="nav-link">
+  uniapp
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Electron
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/electron/" class="nav-link">
+  vue cli plugin electron builder
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大前端" class="dropdown-title"><span class="title">PC前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="大前端" class="mobile-dropdown-title"><span class="title">PC前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          用户端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/web/zy_ssr.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  资缘网主站(SSR)
+</a></li><li class="dropdown-subitem"><a href="/web/zy_personel.html" class="nav-link">
+  资缘网个人中心
+</a></li><li class="dropdown-subitem"><a href="/web/zy_seller.html" class="nav-link">
+  资缘网商家端
+</a></li><li class="dropdown-subitem"><a href="/web/zy_admin.html" class="nav-link">
+  资缘网平台端
+</a></li><li class="dropdown-subitem"><a href="/web/zy_show.html" class="nav-link">
+  资缘网PC云展
+</a></li><li class="dropdown-subitem"><a href="/web/zy_chat.html" class="nav-link">
+  资缘网客服系统
+</a></li></ul></li><li class="dropdown-item"><h4>
+          内部平台
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/zh/miscellaneous/migration-guide.html" class="nav-link">
+  平台中心
+</a></li><li class="dropdown-subitem"><a href="/zh/miscellaneous/migration-guide.html" class="nav-link">
+  绩效管理系统(web)
+</a></li><li class="dropdown-subitem"><a href="/zh/miscellaneous/migration-guide.html" class="nav-link">
+  绩效管理系统(admin)
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="微信端" class="dropdown-title"><span class="title">微信端</span> <span class="arrow down"></span></button> <button type="button" aria-label="微信端" class="mobile-dropdown-title"><span class="title">微信端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          用户端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/wechat/zy_wechat.html" class="nav-link">
+  资缘网微信端
+</a></li><li class="dropdown-subitem"><a href="/wechat/zy_show.html" class="nav-link">
+  资缘网微信云展
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Ego" class="dropdown-title"><span class="title">Ego</span> <span class="arrow down"></span></button> <button type="button" aria-label="Ego" class="mobile-dropdown-title"><span class="title">Ego</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          用户端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/ego/ego_uniapp.html" class="nav-link">
+  买家小程序
+</a></li><li class="dropdown-subitem"><a href="/ego/ego_pc.html" class="nav-link">
+  买家PC端
+</a></li></ul></li><li class="dropdown-item"><h4>
+          商家端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/ego/ego_admin_pc.html" class="nav-link">
+  商家PC端
+</a></li><li class="dropdown-subitem"><a href="/ego/ego_admin_H5.html" class="nav-link">
+  商家端H5
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="http://192.168.25.106/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  npm私仓
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="http://192.168.25.117/front" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  git私仓
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/web/" aria-current="page" class="sidebar-link">概览</a></li><li><a href="/web/zy_ssr.html" aria-current="page" class="active sidebar-link">资缘网主站(SSR)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/zy_ssr.html#项目结构说明" class="sidebar-link">项目结构说明</a></li><li class="sidebar-sub-header"><a href="/web/zy_ssr.html#package-json核心依赖与组件" class="sidebar-link">package.json核心依赖与组件</a></li><li class="sidebar-sub-header"><a href="/web/zy_ssr.html#app-js-特别说明" class="sidebar-link">app.js 特别说明</a></li></ul></li><li><a href="/web/zy_personel.html" class="sidebar-link">资缘网个人中心</a></li><li><a href="/web/zy_seller.html" class="sidebar-link">资缘网商家端</a></li><li><a href="/web/zy_admin.html" class="sidebar-link">资缘网平台端</a></li><li><a href="/web/zy_show.html" class="sidebar-link">资缘网PC云展</a></li><li><a href="/web/zy_chat.html" class="sidebar-link">资缘网客服系统</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="资缘网主站-ssr"><a href="#资缘网主站-ssr" class="header-anchor">#</a> 资缘网主站(SSR)</h1> <h2 id="项目结构说明"><a href="#项目结构说明" class="header-anchor">#</a> 项目结构说明</h2> <ul><li><p>build</p> <ul><li>setup-dev-server.js</li> <li>utils.js</li> <li>vue-loader.conf.js</li> <li>webpack.base.config.js</li> <li>webpack.client.config.js  // 针对客户端（client-manifest）的webpack配置</li> <li>webpack.server.config.js // 针对服务端（server-bundle）的webpack配置</li></ul></li> <li><p>config</p> <ul><li>dev.env.js</li> <li>index.js</li> <li>prod.env.js</li></ul></li> <li><p>src</p> <ul><li>...</li></ul> <ul><li>app.js // 应用实例（必须工厂模式）</li> <li>App.vue // 应用实例模板</li> <li>entry-client.js // 客户端入口文件</li> <li>entry-server.js // 服务端入口文件</li> <li>index.template.html // 静态页面模板（渲染模板）</li> <li>store // 状态管理（必须工厂模式）</li> <li>router // 路由管理（必须工厂模式）</li></ul></li> <li><p>static</p> <ul><li>...</li></ul></li> <li><p>package.json // 依赖配置，npm命令配置</p></li> <li><p>server.js // node服务启动程序</p></li></ul> <blockquote><p>备注：原SPA应用工程的入口文件main.js以及静态模板index.html都已删除，main.js的应用实例配置转至app.js</p></blockquote> <blockquote><p>main.js充当的应用入口转至entry-client.js,请注意区分并合理使用。</p></blockquote> <h2 id="package-json核心依赖与组件"><a href="#package-json核心依赖与组件" class="header-anchor">#</a> package.json核心依赖与组件</h2> <ul><li>compression</li> <li>cross-env</li> <li>es6-promise</li> <li>express // node express</li> <li>extract-text-webpack-plugin</li> <li>lru-cache // 组件级缓存</li> <li>route-cache // 路由缓存</li> <li>serve-favicon // 处理favicon</li> <li>vue //vue核心</li> <li>vue-router // 路由</li> <li>vue-server-renderer // SSR渲染核心（版本请与vue保持一致）</li> <li>vuex // 状态管理</li> <li>vuex-router-sync // 路由-状态同步</li> <li>vue-client-only //核武器，专门用来处理不支持SSR的组件</li></ul> <h2 id="app-js-特别说明"><a href="#app-js-特别说明" class="header-anchor">#</a> app.js 特别说明</h2> <h4 id="使用工厂模式"><a href="#使用工厂模式" class="header-anchor">#</a> 使用工厂模式</h4> <p>app.js可视为SPA下的main.js文件，但注意这两者并不等同<br>
+可在app.js中进行与main.js类似的配置方法，但不同的是app.js提供了一个创建Vue实例的工厂函数，而非直接导出一个Vue实例</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">createApp</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token operator">...</span>
+    <span class="token function-variable function">render</span><span class="token operator">:</span> <span class="token parameter">h</span> <span class="token operator">=&gt;</span> <span class="token function">h</span><span class="token punctuation">(</span>App<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> <span class="token punctuation">{</span> app<span class="token punctuation">,</span> router<span class="token punctuation">,</span> store <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>createAPP()将会在entry-client,entry-server中被指定使用，具体构造函数请自行阅读源代码</p> <blockquote><p>使用工厂模式是为了避免状态单例（在服务端渲染模式下，服务端需要为每一个访问者创建独立的应用实例）</p></blockquote> <h4 id="状态与路由同步"><a href="#状态与路由同步" class="header-anchor">#</a> 状态与路由同步</h4> <p>服务端渲染下，服务端与客户端需要保持路由的同步，我们使用store配合router来达到此目的</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> sync <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex-router-sync'</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">createApp</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token operator">...</span>
+  <span class="token function">sync</span><span class="token punctuation">(</span>store<span class="token punctuation">,</span>router<span class="token punctuation">)</span>
+  <span class="token operator">...</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="store-特别说明"><a href="#store-特别说明" class="header-anchor">#</a> store 特别说明</h3> <p>同样以工厂模式创建store</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    modules<span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token operator">...</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    getters<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="使用说明"><a href="#使用说明" class="header-anchor">#</a> 使用说明</h4> <p>由于在入口文件中已经将store注入到Vue所有的component中，因此在页面我们使用store的方式与以往相同</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>  <span class="token function">computed</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span><span class="token function">mapState</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'count'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">foo</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>foo
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">mounted</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span>state <span class="token operator">...</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span>getters <span class="token operator">...</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span>dispatch <span class="token operator">...</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>但是在js文件中，则无法通过直接引入以使用store</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// xxx.js</span>
+  <span class="token keyword">import</span> store <span class="token keyword">from</span> <span class="token string">'./store/index.js'</span>
+  <span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">getUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>user
+  <span class="token punctuation">}</span>
+</code></pre></div><p>以上的代码执行将会报错，这是因为在SPA下index.js当前应用的store实例，而在SSR模式下index.js仅仅创建了一个工厂函数
+正确的使用方法是在函数调用处传入当前的store实例</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// xxx.js</span>
+  <span class="token comment">// import store from './store/index.js'</span>
+  <span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">getUser</span><span class="token punctuation">(</span><span class="token parameter">store</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>user
+  <span class="token punctuation">}</span>
+</code></pre></div><div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// xxx.vue</span>
+  <span class="token keyword">import</span> <span class="token punctuation">{</span> getUser <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'xxx.js'</span>
+  <span class="token operator">...</span>
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>user <span class="token operator">=</span> <span class="token function">getUser</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><h4 id="绑定到window"><a href="#绑定到window" class="header-anchor">#</a> 绑定到window</h4> <p>上面的代码可以正常运行，但看起来似乎很麻烦，并且对于我们改造的调整量很大，但是我们必须确保调用的store/router属于当前的APP实例<br>
+又或者我们在entry-client.js里面将store,router与window进行绑定</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>  <span class="token keyword">const</span> <span class="token punctuation">{</span>app<span class="token punctuation">,</span> store<span class="token punctuation">,</span> router<span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">createdApp</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token operator">...</span>
+  window<span class="token punctuation">.</span>store <span class="token operator">=</span> store
+  window<span class="token punctuation">.</span>router <span class="token operator">=</span> router
+</code></pre></div><p>这样就能就js中这样使用</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>  <span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">getUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>user <span class="token comment">// 默认context是window</span>
+    <span class="token comment">// return window.store.state.user // 或者更直观的使用window.store</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>同样需要注意的是，由于服务端没有window对象，所以请在编写window相关的代码语句时确保不会被服务端所执行。</p></blockquote> <h4 id="惰性注册"><a href="#惰性注册" class="header-anchor">#</a> 惰性注册</h4> <p>当需要创建一个模块的多个实例，如果我们使用一个纯对象来声明模块的状态，那么这个状态对象会通过引用被共享，导致状态对象被修改时 store 或模块间数据互相污染的问题。通过工厂模式我们为每个APP实例创建了独立的store以避免这个问题，但我们仍然建议采用惰性注册(lazy-register)将这些模块分割到对应的路由chunk当中<br>
+对于大型的应用，我们可以将store拆分成多个模块，例如<br></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>  <span class="token comment">// user.js</span>
+  <span class="token comment">// product.js</span>
+  <span class="token comment">// ...</span>
+  <span class="token keyword">import</span> userModules <span class="token keyword">from</span> <span class="token string">'./user.js'</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span><span class="token function">registerModule</span><span class="token punctuation">(</span><span class="token string">'user'</span><span class="token punctuation">,</span>userModules<span class="token punctuation">)</span>
+  <span class="token operator">...</span>
+  <span class="token function">destoryed</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span><span class="token function">unregister</span><span class="token punctuation">(</span><span class="token string">'user'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><h3 id="访问特定平台api"><a href="#访问特定平台api" class="header-anchor">#</a> 访问特定平台API</h3> <p>由于服务端环境下没有window以及document，必须将这两个对象的相关API迁移到客户端下执行<br>
+或者在执行前检查运行环境</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">if</span> <span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">VUE_ENV</span> <span class="token operator">===</span> <span class="token string">'client'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  window<span class="token punctuation">.</span>localStorage <span class="token operator">...</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="ssr模式下生命周期特别说明"><a href="#ssr模式下生命周期特别说明" class="header-anchor">#</a> SSR模式下生命周期特别说明</h3> <p>在SSR下，Vue的两个重要生命周期钩子:beforeMounted mounted只会在客户端执行<br>
+为了避免Ajax请求在客户端与服务端重复请求，请将Ajax请求迁移到mounted钩子函数中</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// created 等钩子既能在服务端触发，也会在客户端执行，请确保当前功能的必要性合理拆分代码</span>
+<span class="token comment">// 例如：在SPA下一般的Ajax请求在created或者mounted中执行并不影响什么，但在SSR模式下则显得很重要</span>
+<span class="token comment">// 我们将请求移动到mounted下，让该请求只在客户端下执行，则有效节省了服务端的资源（因为对服务端来讲执行此次请求是完全没有必要的）</span>
+<span class="token comment">// 再例如对于特定平台的API若放在created钩子下，服务端执行会出错，我们也将其移动到只会在客户端执行的钩子函数下</span>
+<span class="token comment">// 并且！！！在created里面调用函数本身也是不具规范的一件事！！</span>
+<span class="token comment">// created () {</span>
+<span class="token comment">//   this.fetchInfo(params).then(res =&gt;{</span>
+<span class="token comment">//     ...</span>
+<span class="token comment">//   })</span>
+<span class="token comment">//   window.localStorage ... // 服务端将会报错</span>
+<span class="token comment">//   document.cookie ...  // 服务端将会报错</span>
+<span class="token comment">//   如果不得不在此处访问特定平台API，需要预先检查运行环境</span>
+<span class="token comment">//   if (process.env.VUE_ENV === 'client'){</span>
+<span class="token comment">//      window.localStorage ... // 执行环境检查后该代码仅会在客户端执行</span>
+<span class="token comment">//      document.cookie ...  // 执行环境检查后该代码仅会在客户端执行    </span>
+<span class="token comment">//   }</span>
+<span class="token comment">// }</span>
+<span class="token comment">// -&gt;</span>
+<span class="token function">mounted</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">fetchInfo</span><span class="token punctuation">(</span>params<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+    <span class="token operator">...</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  window<span class="token punctuation">.</span>localStorage <span class="token operator">...</span> 
+  document<span class="token punctuation">.</span>cookie <span class="token operator">...</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>server.js中加入了JSDOM，以在服务端环境中模拟window以及document等对象解决工程中大量window / document is undeafined错误
+但这并非是最佳解决方案， 日常编码中仍然要求遵守特别说明中的使用规范</p></blockquote> <h3 id="style注意事项"><a href="#style注意事项" class="header-anchor">#</a> Style注意事项</h3> <p>1，请勿画蛇添足</p> <div class="language-css extra-class"><pre class="language-css"><code>&lt;style lang=<span class="token string">&quot;&quot;</span> scoped&gt;
+&lt;/&gt;
+</code></pre></div><p>这将引起编译错误，因为lang指定了一个空的字符串值，请遵守以下的正确示范</p> <div class="language-css extra-class"><pre class="language-css"><code>&lt;style lang=<span class="token string">&quot;scss&quot;</span> scoped&gt;
+&lt;/&gt;
+&lt;style lang=<span class="token string">&quot;css&quot;</span> scoped&gt;
+&lt;/&gt;
+<span class="token comment">/* 或者 */</span>
+&lt;style scoped&gt;
+&lt;/&gt;
+</code></pre></div><p>无指定lang时编译器默认为&quot;lang='css'&quot;</p> <h4 id="关于服务端数据预取-seo核心部分"><a href="#关于服务端数据预取-seo核心部分" class="header-anchor">#</a> 关于服务端数据预取（SEO核心部分）</h4> <p>通过将SPA改造成服务端渲染（SSR）我们的应用现在具备了做SEO的基础（爬虫可以访问到完整的html页面了）<br>
+但是此时SEO还没有完成，我们除了让爬虫抓取基础的html页面之外，通常还需要让爬虫抓取到页面的内容（比如文章详情，商品详情等）<br>
+所以我们需要 在html页面输出 之前将对应的数据在服务端获取并且渲染到html里面，因此在SSR下我们暴露了一个新的钩子：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+    <span class="token punctuation">{</span><span class="token punctuation">{</span> title <span class="token punctuation">}</span><span class="token punctuation">}</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
+<span class="token keyword">import</span> commodity <span class="token keyword">from</span> <span class="token string">'./commodity'</span>
+<span class="token function">asyncData</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>store<span class="token punctuation">,</span>router<span class="token punctuation">}</span></span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  store<span class="token punctuation">.</span><span class="token function">registerModule</span><span class="token punctuation">(</span><span class="token string">'commodity'</span><span class="token punctuation">,</span> commodity<span class="token punctuation">)</span>
+  <span class="token keyword">return</span> Promise<span class="token punctuation">.</span><span class="token function">all</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+    store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">'commodity/fetchData'</span><span class="token punctuation">,</span>router<span class="token punctuation">.</span>query<span class="token punctuation">.</span>id<span class="token punctuation">)</span>
+  <span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+computed<span class="token operator">:</span> <span class="token punctuation">{</span>
+  title<span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>commodity<span class="token punctuation">.</span>title
+<span class="token punctuation">}</span>
+<span class="token function">mounted</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token operator">...</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>通过这样的方式，我们将asyncData预先获取的数据渲染到html里面，这样爬虫就可以得到一个具备内容的完整html了。</p> <h4 id="静态资源"><a href="#静态资源" class="header-anchor">#</a> 静态资源</h4> <p>template中需要动态引用静态资源的地方务必使用 require 进行动态引入<br>
+例如：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token operator">&lt;</span>img <span class="token operator">:</span>src<span class="token operator">=</span><span class="token string">&quot;'../../../static/images/login/mm--2@2x.png'&quot;</span> <span class="token operator">&gt;</span> <span class="token comment">// 这样将会引起资源404错误，进而引起页面404错误</span>
+<span class="token comment">// 正确的应该是：</span>
+<span class="token operator">&lt;</span>img <span class="token operator">:</span>src<span class="token operator">=</span><span class="token string">&quot;require('$static/images/login/mm--2@2x.png')&quot;</span> <span class="token operator">&gt;</span>
+
+</code></pre></div><p>如果是静态引用则不需要require<br>
+例如：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token operator">&lt;</span>img src<span class="token operator">=</span><span class="token string">&quot;../../../static/images/login/mm--2@2x.png&quot;</span><span class="token operator">&gt;</span>
+</code></pre></div><p>请注意区分使用场景并合理运用。</p> <h3 id="缓存"><a href="#缓存" class="header-anchor">#</a> 缓存</h3> <h3 id="jsdom"><a href="#jsdom" class="header-anchor">#</a> JSDOM</h3> <h3 id="容灾"><a href="#容灾" class="header-anchor">#</a> 容灾</h3> <h3 id="注意事项"><a href="#注意事项" class="header-anchor">#</a> 注意事项</h3> <ol><li>通过服务端预取的数据接口请不要有登录权限要求，一方面是实现这样的效果难度很大，并且再SEO需求之下这是一个自相矛盾的实现<br>
+毕竟爬虫可不会自己登录之后再来爬取我们的网页内容。</li> <li>由于asyncData只存在于路由界面，这意味着组件无法通过asyncData来预取数据（组件的内容将不会被SEO）如果要对组件内容进行SEO请在<br>
+路由页面asyncData下获取到全部数据并通过props传递到子组件中进行渲染。</li></ol> <h3 id="疑难杂症"><a href="#疑难杂症" class="header-anchor">#</a> 疑难杂症</h3> <p>🐛 Error: Not implemented: window.scrollTo undefined
+上辈子被这个报错气死掉（虽然不是什么会导致程序终止的Bug，但每次都报错看着非常烦）<br>
+原因在于SSR下不支持vue-router的scrollBehavior行为，注释掉即可。<br>
+非要用怎么办？<br>
+目前暂时无解，官方也没有给出这个问题的回答或者解决办法。<br>
+如果你有什么好的解决办法， please fix me 😕</p> <p>🐛 404 Page Not Found
+注解：通常由于各类严重的代码/逻辑错误导致Node.js server运行错误，常见于用户刷新页面后404，再次刷新正常，以此反复。。
+影响程度： 灾难性后果，导致应用程序无法正常使用。
+解决办法： 严格对待自己敲下的每一行代码并对其反复调试和验证，对于某些情况下使用热重载调试并不能得到准确的验证结果，需要
+重新执行npm run serve编译运行。
+<code>[Vue warn]: The client-side rendered virtual DOM tree is not matching server-rendered content. This is likely caused by incorrect HTML markup, for example nesting block-level elements inside &lt;p&gt;, or missing &lt;tbody&gt;. Bailing hydration and performing full client-side render.</code>
+注解：由于我们使用的是SSR混合模式（服务端渲染输出html页面后，客户端进行挂载激活，这样可避免数据重复获取，加快速度） 当出现此报错时说明客户端的DOM树与服务端渲染的内容不一致，导致混合失败，程序将自动进行客户端完全渲染。典型的症状是，在本地开发环境下具有检测双端节点一致性的功能，混合失败情况下页面仍可正常运行（自动进行客户端完全渲染） 但在生产环境下，检测双端节点一致性回大量损耗服务器性能，所以vue-server-render在生产模式下是关闭的，这将导致客户端并没有重新渲染服务端输出的错误HTML，导致页面无法正常使用。</p> <p>所以当控制台抛出此错误时一定要重视，不能因为在开发环境下运行正常就认定为可发布生产！！</p> <ol><li>HTML代码编写不规范，导致出现无效的HTML。</li> <li>HTML中用到了某些v-if等条件控制，在特定的情况下导致两端渲染不匹配而引起。
+影响程度： 灾难性后果，导致控制台输出异常警告，在生产模式下页面无法正常运行，进而大概率抛出404页面。
+解决办法： 严格遵守HTML标签语法标准和优秀的编码习惯（这是重点），尽量避免使用v-if（v-if为false时将无对应DOM节点）,相关需求请用v-show进行代替。</li> <li>Promise函数必须要调用到resolve和reject</li></ol> <p>问题延伸： 出现这个错误一般服务端部分渲染已经出现了问题，此情况在开发模式可能无法察觉，需要打包之后使用生产模式才能看到服务端的具体报错信息<br>
+案例： http://mirror.relaysogo.com/productMatch/result下出现如下错误: <br></p> <blockquote><p>DOMException: Failed to execute 'appendChild' on 'Node': This node type does not support this method.<br>
+终极解决办法： 假设经过排查、代码优化之后仍然出现这个问题，请使用<code>&lt;client-only&gt;&lt;/client-only&gt;</code>进行包裹，这一来范围内组件仅会在客户端进行渲染。</p></blockquote> <div class="language-javascript extra-class"><pre class="language-javascript"><code>  <span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+    <span class="token operator">...</span>
+    <span class="token operator">&lt;</span>client<span class="token operator">-</span>only<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>shit<span class="token operator">&gt;</span>what the fuck<span class="token operator">?</span><span class="token operator">&lt;</span><span class="token operator">/</span>shit<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>client<span class="token operator">-</span>only<span class="token operator">&gt;</span>
+    <span class="token operator">...</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
+</code></pre></div><p>如此一来，<code>&lt;shit&gt;</code>仅会在客户端下进行渲染，不会在服务端造成灾难性后果。
+asyncData 接口代理问题</p> <ol><li>在本地开发模式下，通过node http-proxy-middleware中间件进行代理转发，可以实现客户端请求（ajax）与服务端请求（server pre-fetch）所需要的接口代理。然而发布到生产环境时服务端请求仅在首屏渲染时有效，其余任何需要asyncData钩子进行数据预取的场景均为导致跨域问题。<br>
+具体问题的产生处在entry-client关于router hook for handling asyncData处。深究原因如下：<br>
+（1） 首屏渲染时asyncData由服务端触发，node server进行数据预取，不存在跨域问题，所以首屏渲染数据渲染正常。
+（2） 路由变化时asyncData由客户端触发，浏览器进行数据预取，http-proxy-middleware 此刻不生效进而导致发生接口跨域问题。<br>
+至于为何针对asyncData的接口请求代理失败的原因目前无解，网上均无相关资料。<br>
+不过既然问题是接口跨域，那么问题的解决办法有两种：
+首先此处跨域问题是由于POST复杂请求没有通过后台请求预检（options）</li> <li>服务端配置CORS策略，允许所有/目标作用域通过。</li> <li>使用代理进行接口转发。
+上面我们使用了 node http-proxy-middleware中间件并不能解决所有场景下的接口转发问题， 经过一番折腾最后选择用nginx<br>
+具体的配置过程参考下方详细描述（开发模式下模拟生产环境）。</li></ol> <h4 id="列举的业务功能重构部分"><a href="#列举的业务功能重构部分" class="header-anchor">#</a> 列举的业务功能重构部分</h4> <ol><li>关于Vue.prototype.isClick<br>
+此部分用于限制用户动作的权限控制逻辑进行了如下更改：</li></ol> <div class="language-javascript extra-class"><pre class="language-javascript"><code>  <span class="token comment">// entry-client.js</span>
+  router<span class="token punctuation">.</span><span class="token function">onReady</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">currentRoute</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// Add router hook for handling asyncData.</span>
+  <span class="token comment">// Doing it after initial route is resolved so that we don't double-fetch</span>
+  <span class="token comment">// the data that we already have. Using router.beforeResolve() so that all</span>
+  <span class="token comment">// async components are resolved.</span>
+  router<span class="token punctuation">.</span><span class="token function">beforeResolve</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">to<span class="token punctuation">,</span> <span class="token keyword">from</span><span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 每次路由resolve之前检查可操作权限，每次路由变化都会检查一次用户登录状态</span>
+    store<span class="token punctuation">.</span><span class="token function">dispatch</span><span class="token punctuation">(</span><span class="token string">'checkOperationPerms'</span><span class="token punctuation">)</span>
+    <span class="token comment">// 省略其余无关代码....</span>
+     <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// store/modules/user.js</span>
+    <span class="token function">checkOperationPerms</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> commit<span class="token punctuation">,</span> rootState <span class="token punctuation">}</span></span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span><span class="token operator">!</span>rootState<span class="token punctuation">.</span>user<span class="token punctuation">.</span>token<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token class-name">Vue</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>isClick <span class="token operator">=</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+        <span class="token class-name">Vue</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>isClick <span class="token operator">=</span> <span class="token boolean">false</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre></div><p>经测试，该功能目前运行较为稳定。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/web/" class="prev router-link-active">
+        概览
+      </a></span> <span class="next"><a href="/web/zy_personel.html">
+        资缘网个人中心
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.f4e7372f.js" defer></script><script src="/assets/js/2.5644ef08.js" defer></script><script src="/assets/js/48.a10e69f3.js" defer></script>
+  </body>
+</html>
