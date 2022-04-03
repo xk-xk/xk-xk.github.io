@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue.js | 前端笔记</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="前端笔记">
+    
+    <link rel="preload" href="/assets/css/0.styles.6a2fa237.css" as="style"><link rel="preload" href="/assets/js/app.777978c7.js" as="script"><link rel="preload" href="/assets/js/2.6de0ece2.js" as="script"><link rel="preload" href="/assets/js/20.36032602.js" as="script"><link rel="prefetch" href="/assets/js/10.48049053.js"><link rel="prefetch" href="/assets/js/11.a9ef8e7c.js"><link rel="prefetch" href="/assets/js/12.2786ea05.js"><link rel="prefetch" href="/assets/js/13.7eff9216.js"><link rel="prefetch" href="/assets/js/14.74104c6c.js"><link rel="prefetch" href="/assets/js/15.8400b4a2.js"><link rel="prefetch" href="/assets/js/16.214b5be0.js"><link rel="prefetch" href="/assets/js/17.5de00d86.js"><link rel="prefetch" href="/assets/js/18.c85aeb5d.js"><link rel="prefetch" href="/assets/js/19.605d011b.js"><link rel="prefetch" href="/assets/js/3.dcb5c1f1.js"><link rel="prefetch" href="/assets/js/4.7802cab7.js"><link rel="prefetch" href="/assets/js/5.04cf5474.js"><link rel="prefetch" href="/assets/js/6.fba7c2ce.js"><link rel="prefetch" href="/assets/js/7.aaf42974.js"><link rel="prefetch" href="/assets/js/8.77b2fe6e.js"><link rel="prefetch" href="/assets/js/9.1f309f7d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6a2fa237.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">前端笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/program-specs/" class="nav-link">
+  代码规范
+</a></div><div class="nav-item"><a href="/react/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link router-link-active">
+  Vue
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/program-specs/" class="nav-link">
+  代码规范
+</a></div><div class="nav-item"><a href="/react/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/vue/" class="nav-link router-link-active">
+  Vue
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/vue/" aria-current="page" class="sidebar-link">概述</a></li><li><a href="/vue/vuejs.html" aria-current="page" class="active sidebar-link">Vue.js</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vue/vuejs.html#组件书写规范" class="sidebar-link">组件书写规范</a></li></ul></li><li><a href="/vue/nuxtjs.html" class="sidebar-link">Nuxt.js</a></li><li><a href="/vue/uniapp.html" class="sidebar-link">uni-app</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue-js"><a href="#vue-js" class="header-anchor">#</a> Vue.js</h1> <h2 id="组件书写规范"><a href="#组件书写规范" class="header-anchor">#</a> 组件书写规范</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+ 
+  mixins<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+ 
+  components<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+ 
+  props<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+ 
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+ 
+  computed<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+ 
+  watch<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+ 
+  <span class="token function">created</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+ 
+  <span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+ 
+  <span class="token function">destroyed</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+ 
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2022/4/3 11:13:38</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vue/" class="prev router-link-active">
+        概述
+      </a></span> <span class="next"><a href="/vue/nuxtjs.html">
+        Nuxt.js
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.777978c7.js" defer></script><script src="/assets/js/2.6de0ece2.js" defer></script><script src="/assets/js/20.36032602.js" defer></script>
+  </body>
+</html>
