@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>React Hook | 前端笔记</title>
-    <meta name="generator" content="VuePress 1.8.2">
+    <meta name="generator" content="VuePress 1.9.7">
     
     <meta name="description" content="前端笔记">
     
-    <link rel="preload" href="/assets/css/0.styles.869ac584.css" as="style"><link rel="preload" href="/assets/js/app.c7883db4.js" as="script"><link rel="preload" href="/assets/js/2.6de0ece2.js" as="script"><link rel="preload" href="/assets/js/16.7b6ffe26.js" as="script"><link rel="prefetch" href="/assets/js/10.4c7ec131.js"><link rel="prefetch" href="/assets/js/11.bb401b52.js"><link rel="prefetch" href="/assets/js/12.89f5787c.js"><link rel="prefetch" href="/assets/js/13.4f14e8b4.js"><link rel="prefetch" href="/assets/js/14.6f762aa4.js"><link rel="prefetch" href="/assets/js/15.b2d336b1.js"><link rel="prefetch" href="/assets/js/17.25a76365.js"><link rel="prefetch" href="/assets/js/18.ce568443.js"><link rel="prefetch" href="/assets/js/19.381acccf.js"><link rel="prefetch" href="/assets/js/20.bc5642c8.js"><link rel="prefetch" href="/assets/js/21.2c45007a.js"><link rel="prefetch" href="/assets/js/22.21b94e44.js"><link rel="prefetch" href="/assets/js/3.2edd2080.js"><link rel="prefetch" href="/assets/js/4.c46daee1.js"><link rel="prefetch" href="/assets/js/5.1484f066.js"><link rel="prefetch" href="/assets/js/6.7faf298f.js"><link rel="prefetch" href="/assets/js/7.aaf42974.js"><link rel="prefetch" href="/assets/js/8.77b2fe6e.js"><link rel="prefetch" href="/assets/js/9.824c7080.js">
+    <link rel="preload" href="/assets/css/0.styles.869ac584.css" as="style"><link rel="preload" href="/assets/js/app.c287151d.js" as="script"><link rel="preload" href="/assets/js/2.56746fd2.js" as="script"><link rel="preload" href="/assets/js/20.02d89e61.js" as="script"><link rel="prefetch" href="/assets/js/10.79b33a27.js"><link rel="prefetch" href="/assets/js/11.b0475ec0.js"><link rel="prefetch" href="/assets/js/12.67ca54bd.js"><link rel="prefetch" href="/assets/js/13.2eee61a5.js"><link rel="prefetch" href="/assets/js/14.ea63c229.js"><link rel="prefetch" href="/assets/js/15.8f57ca85.js"><link rel="prefetch" href="/assets/js/16.e76a5d45.js"><link rel="prefetch" href="/assets/js/17.c0110200.js"><link rel="prefetch" href="/assets/js/18.e249c022.js"><link rel="prefetch" href="/assets/js/19.559da392.js"><link rel="prefetch" href="/assets/js/21.3bf83c41.js"><link rel="prefetch" href="/assets/js/22.0cdf22d8.js"><link rel="prefetch" href="/assets/js/23.6e78aecf.js"><link rel="prefetch" href="/assets/js/24.d2698f38.js"><link rel="prefetch" href="/assets/js/25.d637db7e.js"><link rel="prefetch" href="/assets/js/26.6e38d9e9.js"><link rel="prefetch" href="/assets/js/3.d0e1b498.js"><link rel="prefetch" href="/assets/js/4.16374d84.js"><link rel="prefetch" href="/assets/js/5.3f00f33e.js"><link rel="prefetch" href="/assets/js/6.c1b05da0.js"><link rel="prefetch" href="/assets/js/7.06c628b8.js"><link rel="prefetch" href="/assets/js/8.e627ee66.js"><link rel="prefetch" href="/assets/js/9.087d0b4c.js">
     <link rel="stylesheet" href="/assets/css/0.styles.869ac584.css">
   </head>
   <body>
@@ -20,6 +20,8 @@
   Vue
 </a></div><div class="nav-item"><a href="/design/" class="nav-link">
   设计思想
+</a></div><div class="nav-item"><a href="/interview/" class="nav-link">
+  面试
 </a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/program-specs/" class="nav-link">
   代码规范
 </a></div><div class="nav-item"><a href="/react/" class="nav-link router-link-active">
@@ -28,7 +30,9 @@
   Vue
 </a></div><div class="nav-item"><a href="/design/" class="nav-link">
   设计思想
-</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/react/" aria-current="page" class="sidebar-link">概述</a></li><li><a href="/react/react.html" class="sidebar-link">React</a></li><li><a href="/react/hook.html" aria-current="page" class="active sidebar-link">React Hook</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/react/hook.html#usestate" class="sidebar-link">useState</a></li><li class="sidebar-sub-header"><a href="/react/hook.html#useref" class="sidebar-link">useRef</a></li><li class="sidebar-sub-header"><a href="/react/hook.html#useeffect" class="sidebar-link">useEffect</a></li><li class="sidebar-sub-header"><a href="/react/hook.html#usereducer" class="sidebar-link">useReducer</a></li><li class="sidebar-sub-header"><a href="/react/hook.html#usecontext" class="sidebar-link">useContext</a></li><li class="sidebar-sub-header"><a href="/react/hook.html#usecallback" class="sidebar-link">useCallback</a></li></ul></li><li><a href="/react/redux.html" class="sidebar-link">React Redux</a></li><li><a href="/react/native.html" class="sidebar-link">React Native</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="react-hook"><a href="#react-hook" class="header-anchor">#</a> React Hook</h1> <h2 id="usestate"><a href="#usestate" class="header-anchor">#</a> useState</h2> <p><code>useState</code> 用来管理组件自身的状态</p> <div class="language-tsx extra-class"><pre class="language-tsx"><code><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> useState <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span>
+</a></div><div class="nav-item"><a href="/interview/" class="nav-link">
+  面试
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/react/" aria-current="page" class="sidebar-link">概述</a></li><li><a href="/react/react.html" class="sidebar-link">React</a></li><li><a href="/react/hook.html" aria-current="page" class="active sidebar-link">React Hook</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/react/hook.html#usestate" class="sidebar-link">useState</a></li><li class="sidebar-sub-header"><a href="/react/hook.html#useref" class="sidebar-link">useRef</a></li><li class="sidebar-sub-header"><a href="/react/hook.html#useeffect" class="sidebar-link">useEffect</a></li><li class="sidebar-sub-header"><a href="/react/hook.html#usereducer" class="sidebar-link">useReducer</a></li><li class="sidebar-sub-header"><a href="/react/hook.html#usecontext" class="sidebar-link">useContext</a></li><li class="sidebar-sub-header"><a href="/react/hook.html#usecallback" class="sidebar-link">useCallback</a></li><li class="sidebar-sub-header"><a href="/react/hook.html#自定义-hook" class="sidebar-link">自定义 hook</a></li></ul></li><li><a href="/react/redux.html" class="sidebar-link">React Redux</a></li><li><a href="/react/native.html" class="sidebar-link">React Native</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="react-hook"><a href="#react-hook" class="header-anchor">#</a> React Hook</h1> <h2 id="usestate"><a href="#usestate" class="header-anchor">#</a> useState</h2> <p><code>useState</code> 用来管理组件自身的状态</p> <div class="language-tsx extra-class"><pre class="language-tsx"><code><span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> useState <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span>
 
 <span class="token keyword">const</span> <span class="token function-variable function">App</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
     <span class="token keyword">const</span> <span class="token punctuation">[</span>count<span class="token punctuation">,</span> setCount<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
@@ -212,7 +216,51 @@
 <span class="token punctuation">}</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> TdItem<span class="token punctuation">;</span>
-</code></pre></div><h2 id="usecallback"><a href="#usecallback" class="header-anchor">#</a> useCallback</h2></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2022/4/2 21:09:47</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+</code></pre></div><h2 id="usecallback"><a href="#usecallback" class="header-anchor">#</a> useCallback</h2> <h2 id="自定义-hook"><a href="#自定义-hook" class="header-anchor">#</a> 自定义 hook</h2> <h3 id="usedebounce"><a href="#usedebounce" class="header-anchor">#</a> useDebounce</h3> <p>使用 <code>useEffect</code> 和自定义hook实现一个函数防抖</p> <div class="language-tsx extra-class"><pre class="language-tsx"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> useEffect<span class="token punctuation">,</span> useState <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span>
+
+<span class="token keyword">function</span> <span class="token function">useDebounce</span><span class="token punctuation">(</span><span class="token parameter">value<span class="token operator">:</span> any<span class="token punctuation">,</span> delay <span class="token operator">=</span> <span class="token number">300</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">[</span>debouncedValue<span class="token punctuation">,</span> setDebouncedValue<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span>
+    
+    <span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> handler <span class="token operator">=</span> window<span class="token punctuation">.</span><span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token function">setDebouncedValue</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> delay<span class="token punctuation">)</span>
+        
+        <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token function">clearTimeout</span><span class="token punctuation">(</span>handler<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>value<span class="token punctuation">,</span> delay<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    
+    <span class="token keyword">return</span> debouncedValue
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="useclickoutside"><a href="#useclickoutside" class="header-anchor">#</a> useClickOutside</h3> <p>点击元素之外的区域触发</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> RefObject<span class="token punctuation">,</span> useEffect <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;react&quot;</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * 点击 dom 外的区域
+ * @param refs ref数组
+ * @param callback 回调函数
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">useClickOutside</span> <span class="token operator">=</span> <span class="token punctuation">(</span>refs<span class="token operator">:</span> RefObject<span class="token operator">&lt;</span>HTMLElement<span class="token operator">&gt;</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> callback<span class="token operator">:</span> <span class="token builtin">Function</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> <span class="token function-variable function">listener</span> <span class="token operator">=</span> <span class="token punctuation">(</span>event<span class="token operator">:</span> MouseEvent<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">try</span> <span class="token punctuation">{</span>
+                refs<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span>ref<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>ref<span class="token punctuation">.</span>current <span class="token operator">||</span> ref<span class="token punctuation">.</span>current<span class="token operator">?.</span><span class="token function">contains</span><span class="token punctuation">(</span>event<span class="token punctuation">.</span>target <span class="token keyword">as</span> HTMLElement<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token function">callback</span><span class="token punctuation">(</span>event<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+        document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">&quot;click&quot;</span><span class="token punctuation">,</span> listener<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            document<span class="token punctuation">.</span><span class="token function">removeEventListener</span><span class="token punctuation">(</span><span class="token string">&quot;click&quot;</span><span class="token punctuation">,</span> listener<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>refs<span class="token punctuation">,</span> callback<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>使用</p> <div class="language-tsx extra-class"><pre class="language-tsx"><code><span class="token function">useClickOutside</span><span class="token punctuation">(</span><span class="token punctuation">[</span>ref1<span class="token punctuation">,</span> ref2<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token function">dosomething</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2022/6/8 17:30:07</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
       ←
       <a href="/react/react.html" class="prev">
         React
@@ -221,6 +269,6 @@
       </a>
       →
     </span></p></div> </main></div><div class="global-ui"><!----></div></div>
-    <script src="/assets/js/app.c7883db4.js" defer></script><script src="/assets/js/2.6de0ece2.js" defer></script><script src="/assets/js/16.7b6ffe26.js" defer></script>
+    <script src="/assets/js/app.c287151d.js" defer></script><script src="/assets/js/2.56746fd2.js" defer></script><script src="/assets/js/20.02d89e61.js" defer></script>
   </body>
 </html>
